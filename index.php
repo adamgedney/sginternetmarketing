@@ -56,7 +56,12 @@
 
 			<div class="container">
 				<div class="page landing">
-				
+					<div class="featured-info">
+						<h1>SEO Services That Get Results</h1>
+							<p>We optimize your website to increase organic website traffic from all major search engines including Google, Yahoo and Bing.</p>
+								<button href="#">Request A Proposal</button>
+					</div><!-- /.featured-info-->
+					<img class="landing-img" src="/images/barchart.png" alt="SEO Bar Chart"/>
 				</div><!-- /.page-->
 
 				<div class="page">

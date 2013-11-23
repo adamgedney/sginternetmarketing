@@ -147,7 +147,7 @@ body {
 
 /* line 125, main.scss */
 h1 {
-  font-size: 7.2em;
+  font-size: 4.5em;
   /*18x4*/
   line-height: 1.5;
 }
@@ -216,32 +216,38 @@ textarea {
   font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
 
+/* line 181, main.scss */
+button {
+  background: #d3b148;
+  color: #333333;
+}
+
 /*--------------------------------------End General / Start Objects------------------------------------*/
-/* line 183, main.scss */
+/* line 190, main.scss */
 .hide-text {
   text-indent: 200%;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* line 189, main.scss */
+/* line 196, main.scss */
 .red {
   color: #a21d1b;
 }
 
-/* line 193, main.scss */
+/* line 200, main.scss */
 .underline {
   text-decoration: underline;
 }
 
-/* line 197, main.scss */
+/* line 204, main.scss */
 .login-form a:hover, .submit-button:hover {
   opacity: .5;
   transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
 }
 
-/* line 202, main.scss */
+/* line 209, main.scss */
 .submit-button, input[type=submit] {
   width: 86px;
   height: 31px;
@@ -253,7 +259,7 @@ textarea {
   -webkit-transition-duration: 0.7s;
 }
 
-/* line 215, main.scss */
+/* line 222, main.scss */
 .login-form input[type=text], .login-form input[type=password], .search-bar input[type=text] {
   font-size: 1.6em;
   width: 300px;
@@ -263,7 +269,7 @@ textarea {
   /*text-transform: uppercase;*/
 }
 
-/* line 224, main.scss */
+/* line 231, main.scss */
 .error {
   font-size: 1em;
   color: #a21d1b;
@@ -276,19 +282,19 @@ textarea {
 }
 
 /*--------------------------------------End Objects / Start Main------------------------------------*/
-/* line 236, main.scss */
+/* line 243, main.scss */
 header {
   height: 90px;
   background: #333333;
   overflow: hidden;
-  padding: 9px 2% 0;
+  padding: 9px 3% 0;
 }
-/* line 242, main.scss */
+/* line 249, main.scss */
 header nav {
   display: inline-block;
   float: left;
-  width: 25%;
-  margin-left: 75%;
+  width: 16.66667%;
+  margin-left: 83.33333%;
   margin-right: -100%;
   padding-left: 4px;
   padding-right: 5px;
@@ -297,31 +303,33 @@ header nav {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-left: 2%;
+  overflow: hidden;
 }
-/* line 247, main.scss */
+/* line 255, main.scss */
 header nav li {
   display: inline-block;
-  padding-right: 10%;
+  padding-right: 7%;
   line-height: 90px;
 }
-/* line 253, main.scss */
+/* line 261, main.scss */
 header nav li:last-child {
   padding-right: 0;
 }
-/* line 257, main.scss */
+/* line 265, main.scss */
 header nav a {
   color: #f7f7f7;
 }
 
-/* line 266, main.scss */
+/* line 274, main.scss */
 .page {
-  height: 774px;
-  /*18x43*/
+  height: 720px;
+  /*18x40*/
+  padding: 0 3%;
 }
 
-/* line 270, main.scss */
+/* line 280, main.scss */
 .landing {
+  height: 720px;
   background: #156fa4;
   /* Old browsers */
   background: -moz-linear-gradient(top, #156fa4 0%, #10567f 100%);
@@ -340,12 +348,78 @@ header nav a {
   /* IE6-9 */
 }
 
-/* line 274, main.scss */
+/* line 286, main.scss */
+.featured-info {
+  float: left;
+  width: 58.33333%;
+  margin-left: 0%;
+  margin-right: -58.33333%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 180px;
+}
+/* line 290, main.scss */
+.featured-info p {
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-size: 2.3em;
+}
+/* line 295, main.scss */
+.featured-info button {
+  clear: left;
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  border: none;
+  height: 54px;
+  font-size: 2.1em;
+  font-weight: 100;
+}
+
+/* line 304, main.scss */
+.landing-img {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 180px;
+}
+
+/* line 309, main.scss */
 .request {
   background: #ddebf3;
 }
 
-/* line 286, main.scss */
+/* line 321, main.scss */
 footer {
   height: 162px;
   padding: 14px 2% 0;
@@ -353,7 +427,7 @@ footer {
   margin-top: 108px;
   overflow: hidden;
 }
-/* line 293, main.scss */
+/* line 328, main.scss */
 footer p {
   float: left;
   width: 41.66667%;
@@ -368,7 +442,7 @@ footer p {
   word-wrap: break-word;
   line-height: 162px;
 }
-/* line 299, main.scss */
+/* line 334, main.scss */
 footer img {
   padding-top: 40px;
 }
