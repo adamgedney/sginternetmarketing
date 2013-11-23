@@ -1,0 +1,303 @@
+/* 
+	Thanks for checking out my code!!
+
+
+	Copyright Adam Gedney 11/22/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+*/
+/*---------------Import Zen framework------------*/
+/*http://zengrids.com/*/
+@import "_grids.scss";
+
+/*total col in grid
+half gutter used on each side of each col*/
+$zen-column-count: 12;
+$zen-gutter-width: 9px;
+
+
+.container{
+	/*apply this to container*/
+	@include zen-grid-container;
+}
+
+.aside1{
+	/*required on each grid item in the container*/
+	@include zen-grid-item(2,1);
+}
+
+.content{
+	/*makes grid item span 4 cols*/
+	/*positions grid item in 3rd col*/
+	@include zen-grid-item(4,3);
+}
+
+.aside2{
+	@include zen-grid-item(1,7);
+}
+
+.footer1{
+	/*apply this mixin to start a new row*/
+	@include zen-clear();
+	@include zen-grid-item(3,5);
+}
+
+.footer2{
+	@include zen-grid-item(4,1);
+}
+
+/*----------------SASS------------------*/
+$white: #f7f7f7;
+$dark-gray: #333;
+$red: #a21d1b;
+$gold: #d3b148;
+$blue: #5d95ba;
+$dark-blue: #10567f;
+$light-blue: #1978ae;
+$bg-blue: #ddebf3;
+$green: #5888a3;
+
+@mixin duration($time: .7s){
+		transition-duration: $time;
+-webkit-transition-duration: $time;
+}
+
+@mixin gradient(){
+	background: #156fa4; /* Old browsers */
+background: -moz-linear-gradient(top,  #156fa4 0%, #10567f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#156fa4), color-stop(100%,#10567f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #156fa4 0%,#10567f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #156fa4 0%,#10567f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #156fa4 0%,#10567f 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #156fa4 0%,#10567f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#156fa4', endColorstr='#10567f',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+
+/*--------------------------------------Start CSS Reset---------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+ul {
+list-style: none;
+}
+
+
+
+
+
+
+/*--------------------------------------End CSS Reset / Start General-------------------------------*/
+
+
+body{
+background: $white;
+background-size: cover;
+background-attachment: fixed;
+color: $white;
+font: 62.5% 'Raleway', sans-serif;
+}
+
+
+h1{
+font-size: 7.2em; /*18x4*/
+line-height: 1.5;
+// font-family: 'Tangerine', cursive;
+}
+
+h2{
+font-size: 2.7em;/*18x3*/
+line-height: 1.5;
+}
+
+h3{
+font-size: 3em;/*18x2 - 6*/
+line-height: 1.5;
+}
+
+p, ul, dl{
+font-size: 1.8em;
+font-weight: 100;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+ul{
+line-height: 1.5;
+}
+
+a{
+text-decoration: none;
+color: $blue;
+opacity: 1;
+@include duration;
+outline: none;
+}
+
+a:visited{
+	outline: none;
+}
+
+a:hover, input[type="submit"]:hover{
+opacity: .5;
+@include duration;
+}
+
+a.no-tran:hover{
+	opacity: 1;
+}
+
+img{
+	max-width: 100%;
+}
+
+textarea{
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+/*--------------------------------------End General / Start Objects------------------------------------*/
+
+
+.hide-text{
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.red{
+	color: $red;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.login-form a:hover, .submit-button:hover{
+	opacity: .5;
+	@include duration;
+}
+
+.submit-button, input[type=submit]{
+	width: 86px;
+	height: 31px;
+	background: $gold;
+	border: none;
+	// border-top: 3px solid $light-red;
+	// padding-top: 2px;
+	color: $white;
+	text-transform: uppercase;
+	@include duration;
+}
+
+
+.login-form input[type=text], .login-form input[type=password], .search-bar input[type=text]{
+	font-size: 1.6em;
+	width: 300px;
+	height: 30px;
+	border: none;
+	padding-left: 5px;
+	/*text-transform: uppercase;*/
+}
+
+.error{
+	font-size: 1em;
+	color: $red;
+	position: absolute;
+	opacity: 0;
+	margin-top: -13px;
+	font-size: .9em;
+	@include duration;
+}
+
+/*--------------------------------------End Objects / Start Main------------------------------------*/
+
+header{
+	height: 90px;
+	background: $dark-gray;
+	overflow: hidden;
+	padding: 9px 2% 0;
+
+	nav{
+		display: inline-block;
+		@include zen-grid-item(3,10);
+		padding-left: 2%;
+
+		li{
+			display: inline-block;
+			padding-right: 10%;
+			line-height: 90px;
+		}
+
+		li:last-child{
+			padding-right: 0;
+		}
+
+		a{
+			color: $white;
+		}
+	}
+}
+
+
+
+
+.page{
+	height: 774px; /*18x43*/
+}
+
+.landing{
+	@include gradient();
+}
+
+.request{
+	background: $bg-blue;
+}
+
+
+
+
+
+
+
+
+
+footer{
+	height: 162px; 
+	padding: 14px 2% 0;
+	background: $dark-gray;
+	margin-top: 108px;
+	overflow: hidden;
+
+	p{
+		@include zen-grid-item(5,5);
+		line-height: 162px;
+		// margin: 0 auto;
+	}
+
+	img{
+		padding-top: 40px;
+	}
+}
+

@@ -1,108 +1,374 @@
+/* 
+	Thanks for checking out my code!!
 
 
-
-
-/* 	Copyright Adam Gedney 3/31/13
+	Copyright Adam Gedney 11/22/13
 	contact: adam.gedney@gmail.com
 	http://adamgedney.com
 
 "Good UI design is humble.” – Jono DiCarlo
 */
+/*---------------Import Zen framework------------*/
+/*http://zengrids.com/*/
+/*total col in grid
+half gutter used on each side of each col*/
+/* line 21, main.scss */
+.container {
+  /*apply this to container*/
+}
+/* line 46, _grids.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 50, _grids.scss */
+.container:after {
+  clear: both;
+}
 
+/* line 26, main.scss */
+.aside1 {
+  /*required on each grid item in the container*/
+  float: left;
+  width: 16.66667%;
+  margin-left: 0%;
+  margin-right: -16.66667%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 31, main.scss */
+.content {
+  /*makes grid item span 4 cols*/
+  /*positions grid item in 3rd col*/
+  float: left;
+  width: 33.33333%;
+  margin-left: 16.66667%;
+  margin-right: -50%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 37, main.scss */
+.aside2 {
+  float: left;
+  width: 8.33333%;
+  margin-left: 50%;
+  margin-right: -58.33333%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 41, main.scss */
+.footer1 {
+  /*apply this mixin to start a new row*/
+  clear: left;
+  float: left;
+  width: 25%;
+  margin-left: 33.33333%;
+  margin-right: -58.33333%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 47, main.scss */
+.footer2 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/*----------------SASS------------------*/
 /*--------------------------------------Start CSS Reset---------------------------------------------*/
-
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
-
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+/* line 90, main.scss */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite, code, del, em, img, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+/* line 100, main.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-display: block;
+  display: block;
 }
 
+/* line 104, main.scss */
 ul {
-list-style: none;
+  list-style: none;
 }
-
-
-
-
-
-
 
 /*--------------------------------------End CSS Reset / Start General-------------------------------*/
-
-/* 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
-	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill 
-	--Borrowed from responsive.gs*/
-* { -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box; }
-
-	
-body{
-background: #fafafa;
-color: #6e6e6e;
-font: 62.5% "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+/* line 116, main.scss */
+body {
+  background: #f7f7f7;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f7f7f7;
+  font: 62.5% "Raleway", sans-serif;
 }
 
-h1{
-font-size: 6.9em;
-line-height: 1.1em;
+/* line 125, main.scss */
+h1 {
+  font-size: 7.2em;
+  /*18x4*/
+  line-height: 1.5;
 }
 
-h2{
-font-size: 2.6em;
-line-height: 1.14em;
+/* line 131, main.scss */
+h2 {
+  font-size: 2.7em;
+  /*18x3*/
+  line-height: 1.5;
 }
 
-h3{
-font-size: 1.6em;
-line-height: 1.8em;
+/* line 136, main.scss */
+h3 {
+  font-size: 3em;
+  /*18x2 - 6*/
+  line-height: 1.5;
 }
 
-p, ul, dl{
-font-size: 1.4em;
-line-height: 1.6;
-margin-bottom: 20px;
+/* line 141, main.scss */
+p, ul, dl {
+  font-size: 1.8em;
+  font-weight: 100;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-ul{
-line-height: 1.3em;
+/* line 148, main.scss */
+ul {
+  line-height: 1.5;
 }
 
-a{
-text-decoration: none;
-color: #08298A;
+/* line 152, main.scss */
+a {
+  text-decoration: none;
+  color: #5d95ba;
+  opacity: 1;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+  outline: none;
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-    color: $border-gray;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $border-gray;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $border-gray;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: $border-gray;
+/* line 160, main.scss */
+a:visited {
+  outline: none;
 }
 
-/*--------------------------------------End General / Start Main------------------------------------*/
+/* line 164, main.scss */
+a:hover, input[type="submit"]:hover {
+  opacity: .5;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+}
 
+/* line 169, main.scss */
+a.no-tran:hover {
+  opacity: 1;
+}
 
+/* line 173, main.scss */
+img {
+  max-width: 100%;
+}
 
+/* line 177, main.scss */
+textarea {
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
 
+/*--------------------------------------End General / Start Objects------------------------------------*/
+/* line 183, main.scss */
+.hide-text {
+  text-indent: 200%;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
+/* line 189, main.scss */
+.red {
+  color: #a21d1b;
+}
+
+/* line 193, main.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 197, main.scss */
+.login-form a:hover, .submit-button:hover {
+  opacity: .5;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+}
+
+/* line 202, main.scss */
+.submit-button, input[type=submit] {
+  width: 86px;
+  height: 31px;
+  background: #d3b148;
+  border: none;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+}
+
+/* line 215, main.scss */
+.login-form input[type=text], .login-form input[type=password], .search-bar input[type=text] {
+  font-size: 1.6em;
+  width: 300px;
+  height: 30px;
+  border: none;
+  padding-left: 5px;
+  /*text-transform: uppercase;*/
+}
+
+/* line 224, main.scss */
+.error {
+  font-size: 1em;
+  color: #a21d1b;
+  position: absolute;
+  opacity: 0;
+  margin-top: -13px;
+  font-size: .9em;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+}
+
+/*--------------------------------------End Objects / Start Main------------------------------------*/
+/* line 236, main.scss */
+header {
+  height: 90px;
+  background: #333333;
+  overflow: hidden;
+  padding: 9px 2% 0;
+}
+/* line 242, main.scss */
+header nav {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-left: 2%;
+}
+/* line 247, main.scss */
+header nav li {
+  display: inline-block;
+  padding-right: 10%;
+  line-height: 90px;
+}
+/* line 253, main.scss */
+header nav li:last-child {
+  padding-right: 0;
+}
+/* line 257, main.scss */
+header nav a {
+  color: #f7f7f7;
+}
+
+/* line 266, main.scss */
+.page {
+  height: 774px;
+  /*18x43*/
+}
+
+/* line 270, main.scss */
+.landing {
+  background: #156fa4;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #156fa4 0%, #10567f 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #156fa4), color-stop(100%, #10567f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #156fa4 0%, #10567f 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #156fa4 0%, #10567f 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #156fa4 0%, #10567f 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #156fa4 0%, #10567f 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#156fa4', endColorstr='#10567f',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 274, main.scss */
+.request {
+  background: #ddebf3;
+}
+
+/* line 286, main.scss */
+footer {
+  height: 162px;
+  padding: 14px 2% 0;
+  background: #333333;
+  margin-top: 108px;
+  overflow: hidden;
+}
+/* line 293, main.scss */
+footer p {
+  float: left;
+  width: 41.66667%;
+  margin-left: 33.33333%;
+  margin-right: -75%;
+  padding-left: 4px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  line-height: 162px;
+}
+/* line 299, main.scss */
+footer img {
+  padding-top: 40px;
+}
