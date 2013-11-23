@@ -46,9 +46,9 @@
 
 			<nav>
 				<ul>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="/pages/services">Services</a></li>
+					<li><a href="/pages/blog">Blog</a></li>
+					<li><a href="/pages/services">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -60,12 +60,14 @@
 			<div class="container">
 				<div class="page landing">
 					<div class="page-inner">
+
 						<div class="featured-info">
 							<h1>SEO Services That Get Results</h1>
 								<p>We optimize your website to increase organic website traffic from all major search engines including Google, Yahoo and Bing.</p>
-									<button href="#">Request A Proposal</button>
+									<a class="button" href="/pages/request-a-proposal">Request A Proposal</a>
 						</div><!-- /.featured-info-->
-						<img class="landing-img" src="/images/barchart.png" alt="SEO Bar Chart"/>
+
+						<!-- <img class="landing-img" src="/images/barchart.png" alt="SEO Bar Chart"/> -->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
@@ -80,7 +82,9 @@
 						<div class="box">
 							<h2>Website Analysis</h2>
 								<div class="box-inner">
-									<img src="/images/magnifyingglass.png" alt="service icon"/>
+									<a target="_blank" href="/pages/services">
+										<img src="/images/magnifyingglass.png" alt="service icon"/>
+									</a>
 								</div><!-- /.box-inner-->
 						</div><!-- /.box-->
 
@@ -89,7 +93,9 @@
 						<div class="box">
 							<h2>SEO Services</h2>
 								<div class="box-inner">
-									<img src="/images/monitor.png" alt="service icon"/>
+									<a target="_blank" href="/pages/services">
+										<img src="/images/monitor.png" alt="service icon"/>
+									</a>
 								</div><!-- /.box-inner-->
 						</div><!-- /.box-->
 
@@ -98,7 +104,9 @@
 						<div class="box">
 							<h2>Track Record</h2>
 								<div class="box-inner">
-									<img src="/images/linegraph.png" alt="service icon"/>
+									<a target="_blank" href="/pages/services">
+										<img src="/images/linegraph.png" alt="service icon"/>
+									</a>
 								</div><!-- /.box-inner-->
 						</div><!-- /.box-->
 
@@ -134,19 +142,19 @@
 						<div class="box">
 							<div class="form">
 								<form action="" method="post">
-									<label for="name">Name<span class="super red">*</span></label>
+									<label for="name">Name*</label>
 									<input type="text" name="name" placeholder="Full Name"/>
 
-									<label for="email">Email<span class="super red">*</span></label>
+									<label for="email">Email*</label>
 									<input type="email" name="email" placeholder="you@example.com"/>
 
-									<label for="website">Website<span class="super red">*</span></label>
+									<label for="website">Website*</label>
 									<input type="url" name="website" placeholder="http://example.com"/>
 
-									<label for="phone">Phone<span class="super red">*</span></label>
+									<label for="phone">Phone*</label>
 									<input type="tel" name="phone" placeholder="555-555-1212"/>
 
-									<label for="services">Services<span class="super red">*</span></label>
+									<label for="services">Services*</label>
 									<div class="checkboxes">
 										
 										<input type="checkbox" name="services" value="SEO"/>
@@ -172,9 +180,69 @@
 
 
 
-				<div class="page">
+				<div class="page how">
 					<div class="page-inner">
-				
+						<h1>How We Do It</h1>
+
+						<p>
+						We only work with the highest quality Web Developers and SEO
+						Experts to ensure your website and business are handled with the
+						utmost care and professionalism. Our main focus is on <a target="_blank" href="/pages/services">SEO</a>, <a href="/pages/services">Web
+						Development</a> and <a target="_blank" href="/pages/services">Recovery Services</a> because it’s our speciality
+						and we happen to be pretty darn good at it. We are vigilant in
+						our continuing education and make sure we are ahead of the
+						competition in our market research, search engine algorithm
+						updates, latest technology and best practices. There is no guess
+						work, only results. We work with new businesses just starting out 
+						by building SEO optimized and user-friendly websites with
+						visually appealing and clean designs as well as existing
+						businesses that are looking to increase visibility online by
+						optimizing their existing websites. Whether you’ve been in
+						business for 10 years or 10 days, we can help you achieve the
+						online success you’re hoping for. Has your site received a manual
+						penalty by Google? No problem! We’ve helped numerous clients
+						reverse manual actions by Google and get their sites ranking
+						again. We can help you too. <a target="_blank" href="/pages/contact">Contact Us</a> for more information.
+						</p>
+
+						<div class="social">
+							<div class="box">
+								<div class="box-inner">
+									<a target="_blank" href="http://www.twitter.com/sginternetmktng">
+										<img src="/images/twitter.png" alt="twitter icon"/>
+										<h3>Follow Us</h3>
+									</a>
+								</div><!-- /.box-inner -->
+							</div><!-- /.box -->
+
+							<div class="box">
+								<div class="box-inner">
+									<a target="_blank" href="http://www.facebook.com/sginternetmarketing">
+										<img src="/images/facebook.png" alt="facebook icon"/>
+										<h3>Like Us</h3>
+									</a>
+								</div><!-- /.box-inner -->
+							</div><!-- /.box -->
+
+							<div class="box">
+								<div class="box-inner">
+									<a target="_blank" href="https://plus.google.com/117301156683295113742/about">
+										<img src="/images/google.png" alt="google icon"/>
+										<h3>Circle Us</h3>
+									</a>
+								</div><!-- /.box-inner -->
+							</div><!-- /.box -->
+
+							<div class="box">
+								<div class="box-inner">
+									<a target="_blank" href="/pages/rss.xml">
+										<img src="/images/rss.png" alt="rss icon"/>
+										<h3>Subscribe To Us</h3>
+									</a>
+								</div><!-- /.box-inner -->
+							</div><!-- /.box -->
+						</div><!-- /.social-->
+
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 			</div><!-- /.container-->	
@@ -184,8 +252,21 @@
 
 
 		<footer>
-			<img src="/images/logo.png" alt="SG Internet Marketing Logo"/>
-				<p>&copy;2013 SG Internet Marketing  |  <a href="mailto:sgedney@gmail.com?subject:SG Internet Marketing contact inquiry">Contact SG Internet Marketing</a></p>
+			<div class="box">
+				<img src="/images/logo.png" alt="SG Internet Marketing Logo"/>
+			</div><!-- /.box -->
+
+			<div class="box">
+				<nav>
+					<ul>
+						<li><a href="/pages/services">Services</a></li>
+						<li><a href="/pages/services">Blog</a></li>
+						<li><a href="/pages/services">Contact</a></li>
+					</ul>
+				</nav>
+
+				<p>SG Internet Marketing, LLC &copy; 2013</p>
+			</div><!-- /.box -->
 		</footer>
 
 
