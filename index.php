@@ -19,19 +19,14 @@
 	<!-- favicon & humans.txt -->
 	<link type="text/plain" rel="author" href="/humans.txt" />
 	<link rel="shortcut icon" href="http://adamshields.com/favicon.ico" />
-
+	
 	<!-- Googel fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/responsive-gs-12col.css" /><!-- resopnsive.gs grid system -->
-	<link rel="stylesheet" href="css/ie.css" /><!-- resopnsive.gs grid system -->
-
-	<link href="fancyBox/jquery.fancybox.css?v=2.0.5" rel="stylesheet" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.picasagallery.css">
-	<link href="./fancyBox/helpers/jquery.fancybox-thumbs.css?v=2.0.5" rel="stylesheet" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="/css/animate.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+	
 
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -64,7 +59,7 @@
 						<div class="featured-info">
 							<h1>SEO Services That Get Results</h1>
 								<p>We optimize your website to increase organic website traffic from all major search engines including Google, Yahoo and Bing.</p>
-									<a class="button" href="/pages/request-a-proposal">Request A Proposal</a>
+									<a class="button animated bounceInUp" href="/pages/request-a-proposal">Request A Proposal</a>
 						</div><!-- /.featured-info-->
 
 						<!-- <img class="landing-img" src="/images/barchart.png" alt="SEO Bar Chart"/> -->
@@ -82,7 +77,7 @@
 						<div class="box">
 							<h2>Website Analysis</h2>
 								<div class="box-inner">
-									<a target="_blank" href="/pages/services">
+									<a href="/pages/services">
 										<img src="/images/magnifyingglass.png" alt="service icon"/>
 									</a>
 								</div><!-- /.box-inner-->
@@ -93,7 +88,7 @@
 						<div class="box">
 							<h2>SEO Services</h2>
 								<div class="box-inner">
-									<a target="_blank" href="/pages/services">
+									<a href="/pages/services">
 										<img src="/images/monitor.png" alt="service icon"/>
 									</a>
 								</div><!-- /.box-inner-->
@@ -104,7 +99,7 @@
 						<div class="box">
 							<h2>Track Record</h2>
 								<div class="box-inner">
-									<a target="_blank" href="/pages/services">
+									<a href="/pages/services">
 										<img src="/images/linegraph.png" alt="service icon"/>
 									</a>
 								</div><!-- /.box-inner-->
