@@ -20,8 +20,16 @@ $(function(){
 	//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
 
 
+// $(document).on('mouseover', '.button', function(e){
+// 	console.log('hovering');
+// 	$(this).addClass('tada');
+// });
+
+// $(document).on('mouseout', '.button', function(e){
+// 	$(this).removeClass('tada');
+// });
 
 
 
 
-
+});

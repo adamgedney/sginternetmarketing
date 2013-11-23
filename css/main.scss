@@ -8,6 +8,8 @@
 
 "Good UI design is humble.” – Jono DiCarlo
 */
+
+
 /*----------------SASS------------------*/
 $white: #f7f7f7;
 $light-gray: #B0B0B0;
@@ -114,7 +116,6 @@ a{
 text-decoration: none;
 color: $blue;
 opacity: 1;
-@include duration;
 outline: none;
 }
 
@@ -242,7 +243,7 @@ nav{
 }
 
 .featured-info{
-	width: 66.6666%;
+	// width: 66.6666%;
 	margin-top: 81px;
 	float: left;
 	// color: $dark-gray;
@@ -271,16 +272,6 @@ nav{
 		text-align: center;
 	}
 }
-
-.landing-img{
-	width: 33.3333%;
-	margin-top: 65px;
-	display: inline-block;
-	float: right;
-}
-
-
-
 
 
 
@@ -317,6 +308,7 @@ nav{
 		top: 18%;
 	}
 }
+
 
 .span-columns{
 	clear: both;
