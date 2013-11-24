@@ -32,7 +32,7 @@
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
 </head>
-	<body>
+	<body class="home">
 
 
 		<header>
