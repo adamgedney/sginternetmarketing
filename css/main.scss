@@ -16,7 +16,7 @@ $off-white: #eeeeee;
 $light-gray: #D3D3D3;
 $dark-gray: #333;
 $red: #a21d1b;
-$gold: #d3b148;
+$gold: #f1c40f;/*HACK -same as uiyellow*/
 $blue: #427FA5;
 $dark-blue: #10567f;
 $light-blue: #1978ae;
@@ -249,7 +249,7 @@ nav{
 
 
 .page{
-	min-height: 684px; /*18x40 -was 720*/
+	min-height: 612px; /*18x40 -was 720*/
 	padding: 0 3%;
 	background: $white;
 }
@@ -314,7 +314,7 @@ nav{
 
 
 .what{
-	padding-bottom: 99px;
+	// padding-bottom: 99px;
 
 	h1{
 		text-align: center;
@@ -345,7 +345,7 @@ nav{
 .box-inner{
 	height: 216px;
 	width: 256px;
-	background: $green;
+	background: $blue;
 	margin: 0 auto;
 	position: relative;
 
@@ -356,8 +356,8 @@ nav{
 	}
 
 	.button{
-		background: $button-green;
-		color: $dark-gray;
+		background: $dark-blue;
+		color: $white;
 		display: block;
 		width: 256px;
 		height: 45px;
@@ -400,6 +400,12 @@ nav{
 .request{
 	background: $bg-blue;
 	color: $dark-blue;
+	min-height: 504px;
+
+	.page-inner{
+		padding-bottom: 36px;
+		padding-top: 156px;
+	}
 
 	.box{
 		width: 50%;
@@ -427,6 +433,7 @@ nav{
 
 	.features{
 		margin-top: 90px;
+		margin-bottom: 0;
 	}
 }
 
@@ -514,9 +521,11 @@ nav{
 
 
 
+
+
 .how{
 	padding-top: 36px;
-	padding-bottom: 216px;
+	// padding-bottom: 54px;
 
 	h1{
 		text-align: center;
@@ -598,6 +607,7 @@ nav{
 
 	.form{
 		background: none;
+		float: left;
 
 		input{
 			border: 1px solid $light-gray;
@@ -610,7 +620,7 @@ nav{
 
 
 
-/*----------------------------------RFP Page overwrites-----------------------------*/
+/*----------------------------------Thank You Page overwrites-----------------------------*/
 .thankyou{
 	.page:first-child{
 		background: $white;
@@ -877,6 +887,109 @@ body.individual-services{
 		background: $uicarrot;
 	}
 }
+
+
+
+
+/*---------------------------------------------Contact Page------------------------------------*/
+
+.contact-page{
+
+	header{
+		opacity: 1;
+	}
+
+	.page{
+		height: 666px;
+		padding-bottom: 108px;
+	}
+
+	.page:first-child{
+		box-shadow: none;
+		border-bottom: 1px solid $light-gray;
+	}
+
+	.form{
+		background: none;
+		float: left;
+		height: 500px;
+		border-radius: 2px;
+		width: 420px;
+
+		form{
+			width: 320px;
+		}
+
+		input{
+			border: 1px solid $light-gray;
+			width: 312px;
+			float: right;
+		}
+
+		textarea{
+			width: 312px;
+			height: 150px;
+			border: 1px solid $light-gray;
+			border-radius: 2px;
+			padding: 3px;
+		}
+
+		input[type=submit]{
+			width: 320px;
+			// background: $button-green;
+		}
+	}
+
+	.features{
+		color: $dark-gray;
+		width: 33%;
+		float: right;
+		width: 33.33333%;
+		margin-top: 126px;
+
+		h1{
+			line-height: 1em;
+		}
+
+		h2{
+			text-align: left;
+			margin-bottom: 27px;
+			color: $blue;
+		}
+
+		h3{
+			margin-top: 18px;
+		}
+
+		p{
+			text-align: left;
+			margin-bottom: 3px;
+		}
+	}
+}
+
+.contact-wrapper{
+	width: 70%;
+	margin: 0 15%;
+
+	.box{
+		height: 600px;
+		width: auto;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
