@@ -41,9 +41,9 @@
 
 			<nav>
 				<ul>
-					<li><a href="/pages/services">Services</a></li>
+					<li><a href="/pages/services.html">Services</a></li>
 					<li><a href="/pages/blog">Blog</a></li>
-					<li><a href="/pages/services">Contact</a></li>
+					<li><a href="/pages/contact.php">Contact</a></li>
 				</ul>
 			</nav>
 		</header>

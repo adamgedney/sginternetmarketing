@@ -18,11 +18,11 @@ if(isset($_GET['action'])){
 
 		//MAIL new subscriber info
 		$header  = 'MIME-Version: 1.0' . "\r\n";
-		$header .= "Reply-To: adam.gedney@gmail.com\r\n";
-		$header .= "Return-Path: adam.gedney@gmail.com\r\n";
-		$header .= 'From: Adam Gedney <adam.gedney@gmail.com>' . "\r\n";
+		$header .= "Reply-To: info@sgwebmarketing.com\r\n";
+		$header .= "Return-Path: info@sgwebmarketing.com\r\n";
+		$header .= 'From: Adam Gedney <info@sgwebmarketing.com>' . "\r\n";
 
-		$to = 'adam.gedney@gmail.com';
+		$to = 'info@sgwebmarketing.com';
 		$subject = "New Request For Proposal SG Internet Marketing";
 
 		$message = "You have a new RFP inquiry. \r\n \r\n" . 

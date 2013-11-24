@@ -12,6 +12,7 @@
 
 /*----------------SASS------------------*/
 $white: #f7f7f7;
+$off-white: #eeeeee;
 $light-gray: #D3D3D3;
 $dark-gray: #333;
 $red: #a21d1b;
@@ -22,6 +23,17 @@ $light-blue: #1978ae;
 $bg-blue: #ddebf3;
 $green: #5888a3;
 $button-green: #289828;
+
+/*flatui colors*/
+$uired: #c0392b;
+$uiorange: #f39c12;
+$uicarrot: #e67e22;
+$uiyellow: #f1c40f;
+$uigreen: #27ae60;
+$uiturq: #16a085;
+$uiblue: #2980b9;
+$uipurple: #8e44ad;
+
 
 @mixin duration($time: .7s){
 		transition-duration: $time;
@@ -374,6 +386,9 @@ nav{
 
 
 
+
+
+
 .request{
 	background: $bg-blue;
 	color: $dark-blue;
@@ -611,6 +626,107 @@ nav{
 		}
 	}
 }
+
+
+
+
+
+
+/*----------------------------------Services Page overwrites-----------------------------*/
+.services-page{
+	position: relative;
+
+	.page:first-child{
+		height: 2000px;
+		background: $white;
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+			    box-shadow: none;
+		border-bottom: 1px solid $light-gray;    
+	}
+
+	h1{
+		text-align: center;
+		margin-bottom: 90px;
+	}
+
+
+	.box{
+		height: 366px;
+		margin-bottom: 72px;
+		margin-top: 0;
+
+		.box-inner{
+			width: 313px;
+			background: none;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+
+			h2{
+				color: $dark-gray;
+				line-height: 1em;
+				padding-top: 18px;
+			}
+
+			img{
+				position: absolute;
+				left: 28%;
+				top: 42%;
+			}
+
+			p{
+				background: $off-white;
+				top: 216px;
+				padding: 18px;
+				border-bottom-left-radius: 2px;
+				border-bottom-right-radius: 2px;
+			}
+		}
+
+		.uired{
+			background: $uired;
+		}
+		.uiorange{
+			background: $uiorange;
+		}
+		.uicarrot{
+			background: $uicarrot;
+		}
+		.uiyellow{
+			background: $uiyellow;
+		}
+		.uigreen{
+			background: $uigreen;
+		}
+		.uiturq{
+			background: $uiturq;
+		}
+		.uiblue{
+			background: $uiblue;
+		}
+		.uipurple{
+			background: $uipurple;
+		}
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
