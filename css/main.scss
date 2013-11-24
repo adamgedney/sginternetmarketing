@@ -12,7 +12,7 @@
 
 /*----------------SASS------------------*/
 $white: #f7f7f7;
-$light-gray: #B0B0B0;
+$light-gray: #D3D3D3;
 $dark-gray: #333;
 $red: #a21d1b;
 $gold: #d3b148;
@@ -21,6 +21,7 @@ $dark-blue: #10567f;
 $light-blue: #1978ae;
 $bg-blue: #ddebf3;
 $green: #5888a3;
+$button-green: #289828;
 
 @mixin duration($time: .7s){
 		transition-duration: $time;
@@ -145,6 +146,18 @@ textarea{
 	color: $dark-gray;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $light-gray;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   $light-gray;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $light-gray;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $light-gray;
+}
 
 /*--------------------------------------End General / Start Objects------------------------------------*/
 
@@ -234,6 +247,10 @@ nav{
 	overflow: hidden;
 	width: 98%;
 	margin: 0 1%;
+
+	h1{
+		color: $dark-gray;
+	}
 }
 
 .landing{
@@ -251,6 +268,7 @@ nav{
 	h1{
 		margin-bottom: 27px;
 		opacity: .8;
+		color: $white;
 	}
 
 	p{
@@ -275,14 +293,23 @@ nav{
 
 
 
+.what{
+	padding-bottom: 99px;
 
+	h1{
+		text-align: center;
+		margin-bottom: 36px;
+	}
+}
 
 .box{
 	width: 33.333333%;
+	height: 486px;
 	float: left;
 	overflow: hidden;
 	margin-bottom: 108px;
 	margin-top: 36px;
+	position: relative;
 
 	h2{
 		color: $dark-gray;
@@ -306,6 +333,32 @@ nav{
 		position: absolute;
 		left: 16%;
 		top: 18%;
+	}
+
+	.button{
+		background: $button-green;
+		color: $white;
+		display: block;
+		width: 256px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		position: absolute;
+		top: 220px;
+		font-size: 1.8em;
+	}
+
+	h3{
+		position: absolute;
+		top: 283px;
+		color: $dark-gray;
+	}
+
+	p{
+		position: absolute;
+		top: 318px;
+		color: $dark-gray;
+		line-height: 1.3em;
 	}
 }
 
@@ -366,7 +419,7 @@ nav{
 	padding: 36px 0 63px;
 
 	form{
-		width: 260px;
+		width: 262px;
 		margin: 0 auto;
 		overflow: hidden;
 }
@@ -381,7 +434,7 @@ nav{
 		margin-bottom: 12px;
 		float: right;
 		font-size: 1.8em;
-		color: $light-gray;
+		// color: $light-gray;
 	}
 
 	input[type=submit]{
@@ -407,6 +460,8 @@ nav{
 		float: left;
 	}
 }
+
+
 
 .checkboxes{
 	width: 200px;
@@ -460,12 +515,21 @@ nav{
 		margin: 36px 2.5%;
 	}
 
+	
+}
+
+.social{
+	overflow: hidden;
+	height: 300px;
+	position: relative;
+
 	.box{
 		width: 25%;
+		height: 100%;
 
 		.box-inner{
 			width: 136px;
-			height: 100%;
+			// height: 400px;
 			background: none;
 			margin: 0 auto;
 
@@ -480,7 +544,11 @@ nav{
 			}
 
 
-			h3{
+			h3{	
+				position: absolute;
+				top: 126px;
+				left: 0;
+				right: 0;
 				font-size: 1.8em;
 				color: $dark-gray;
 				line-height: 36px;
@@ -492,9 +560,64 @@ nav{
 
 
 
-.social{
-	overflow: hidden;
+
+
+/*----------------------------------RFP Page overwrites-----------------------------*/
+
+.rfp{
+	.page:first-child{
+		background: $white;
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+			    box-shadow: none;
+		border-bottom: 1px solid $light-gray;    
+	}
+
+	.form{
+		background: none;
+
+		input{
+			border: 1px solid $light-gray;
+		}
+	}
 }
+
+
+
+
+
+
+/*----------------------------------RFP Page overwrites-----------------------------*/
+.thankyou{
+	.page:first-child{
+		background: $white;
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+			    box-shadow: none;
+		border-bottom: 1px solid $light-gray;    
+	}
+
+	.how{
+		padding-bottom: 36px;
+
+		p{
+			-moz-column-count:1; /* Firefox */
+			-webkit-column-count:1; /* Safari and Chrome */
+			column-count:1;
+
+			color: $dark-gray;
+			width: 50%;
+			margin: 36px 25% 72px;
+		}
+	}
+}
+
+
+
+
+
+
+
 
 
 footer{

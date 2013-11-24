@@ -1,4 +1,4 @@
-<?php require_once 'controllers/mailer.php'; ?>
+<?php require_once '../controllers/mailer.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Thanks for checking out my code!!
@@ -52,77 +52,7 @@
 
 
 
-			<div class="container">
-				<div class="page landing">
-					<div class="page-inner">
-
-						<div class="featured-info">
-							<h1>SEO Services That Get Results</h1>
-								<p>We optimize your website to increase organic website traffic from all major search engines including Google, Yahoo and Bing.</p>
-									<a class="button animated bounceInUp" href="/pages/request-a-proposal.php">Request A Proposal</a>
-						</div><!-- /.featured-info-->
-
-						<!-- <img class="landing-img" src="/images/barchart.png" alt="SEO Bar Chart"/> -->
-					</div><!-- /.page-inner-->
-				</div><!-- /.page-->
-
-
-
-
-
-				<div class="page what">
-					<div class="page-inner ">
-					<h1>What We Do</h1>
-
-						<div class="box">
-							<h2>Website Analysis</h2>
-								<div class="box-inner">
-									<a href="/pages/services">
-										<img src="/images/magnifyingglass.png" alt="service icon"/>
-									</a>
-
-									<a class="button" href="/pages/request-a-proposal.php">Analyze Your Site</a>
-									<h3>Analyze Your Site!</h3>
-									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
-								</div><!-- /.box-inner-->
-						</div><!-- /.box-->
-
-
-
-						<div class="box">
-							<h2>SEO Services</h2>
-								<div class="box-inner">
-									<a href="/pages/services">
-										<img src="/images/monitor.png" alt="service icon"/>
-									</a>
-
-									<a class="button" href="/pages/request-a-proposal.php">Browse Our Services</a>
-									<h3>Browse Our Services!</h3>
-									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
-								</div><!-- /.box-inner-->
-						</div><!-- /.box-->
-
-
-
-						<div class="box">
-							<h2>Track Record</h2>
-								<div class="box-inner">
-									<a href="/pages/services">
-										<img src="/images/linegraph.png" alt="service icon"/>
-									</a>
-
-									<a class="button" href="/pages/request-a-proposal.php">View Our Record</a>
-									<h3>View Our Record!</h3>
-									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
-								</div><!-- /.box-inner-->
-						</div><!-- /.box-->
-					</div><!-- /.page-inner-->
-				</div><!-- /.page-->
-
-
-
-
-
+			<div class="container rfp">
 				<div class="page request">
 					<div class="page-inner">
 						<div class="box features">
