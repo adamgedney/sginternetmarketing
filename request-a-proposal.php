@@ -1,4 +1,4 @@
-<?php require_once '../controllers/mailer.php'; ?>
+<?php require_once 'controllers/mailer.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Thanks for checking out my code!!
@@ -14,7 +14,7 @@
 
 	<!-- meta -->
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 
 	<!-- favicon & humans.txt -->
 	<link type="text/plain" rel="author" href="/humans.txt" />
@@ -41,9 +41,9 @@
 
 			<nav>
 				<ul>
-					<li><a href="/pages/services.html">Services</a></li>
-					<li><a href="/pages/blog">Blog</a></li>
-					<li><a href="/pages/contact.php">Contact</a></li>
+					<li><a href="/seo-services/services.html">Services</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/contact.php">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -116,8 +116,8 @@
 						<p>
 						We only work with the highest quality Web Developers and SEO
 						Experts to ensure your website and business are handled with the
-						utmost care and professionalism. Our main focus is on <a target="_blank" href="/pages/services">SEO</a>, <a href="/pages/services">Web
-						Development</a> and <a target="_blank" href="/pages/services">Recovery Services</a> because it’s our speciality
+						utmost care and professionalism. Our main focus is on <a href="/seo-services/services.html">SEO</a>, <a href="/seo-services/services.html">Web
+						Development</a> and <a href="/seo-services/services.html">Recovery Services</a> because it’s our speciality
 						and we happen to be pretty darn good at it. We are vigilant in
 						our continuing education and make sure we are ahead of the
 						competition in our market research, search engine algorithm
@@ -131,7 +131,7 @@
 						online success you’re hoping for. Has your site received a manual
 						penalty by Google? No problem! We’ve helped numerous clients
 						reverse manual actions by Google and get their sites ranking
-						again. We can help you too. <a target="_blank" href="/pages/contact">Contact Us</a> for more information.
+						again. We can help you too. <a href="/contact.php">Contact Us</a> for more information.
 						</p>
 
 						<div class="social">
@@ -164,7 +164,7 @@
 
 							<div class="box">
 								<div class="box-inner">
-									<a target="_blank" href="/pages/rss.xml">
+									<a target="_blank" href="/seo-services/rss.xml">
 										<img src="/images/rss.png" alt="rss icon"/>
 										<h3>Subscribe To Us</h3>
 									</a>
@@ -188,9 +188,9 @@
 			<div class="box">
 				<nav>
 					<ul>
-						<li><a href="/pages/services">Services</a></li>
-						<li><a href="/pages/services">Blog</a></li>
-						<li><a href="/pages/services">Contact</a></li>
+						<li><a href="/seo-services/services.html">Services</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/contact.php">Contact</a></li>
 					</ul>
 				</nav>
 

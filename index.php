@@ -14,7 +14,7 @@
 
 	<!-- meta -->
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 
 	<!-- favicon & humans.txt -->
 	<link type="text/plain" rel="author" href="/humans.txt" />
@@ -41,9 +41,9 @@
 
 			<nav>
 				<ul>
-					<li><a href="/pages/services.html">Services</a></li>
-					<li><a href="/pages/blog">Blog</a></li>
-					<li><a href="/pages/contact.php">Contact</a></li>
+					<li><a href="/seo-services/services.html">Services</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/contact.php">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -59,7 +59,7 @@
 						<div class="featured-info">
 							<h1>SEO Services That Get Results</h1>
 								<p>We optimize your website to increase organic website traffic from all major search engines including Google, Yahoo and Bing.</p>
-									<a class="button animated bounceInUp" href="/pages/request-a-proposal.php">Request A Proposal</a>
+									<a class="button animated bounceInUp" href="/request-a-proposal.php">Request A Proposal</a>
 						</div><!-- /.featured-info-->
 
 						<!-- <img class="landing-img" src="/images/barchart.png" alt="SEO Bar Chart"/> -->
@@ -77,11 +77,11 @@
 						<div class="box">
 							<h2>Website Analysis</h2>
 								<div class="box-inner">
-									<a href="/pages/services">
+									<a href="/seo-services/seo-audit.html">
 										<img src="/images/magnifyingglass.png" alt="service icon"/>
 									</a>
 
-									<a class="button" href="/pages/request-a-proposal.php">Analyze Your Site</a>
+									<a class="button" href="/seo-services/seo-audit.html">Analyze Your Site</a>
 									<h3>Analyze Your Site!</h3>
 									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
 								</div><!-- /.box-inner-->
@@ -92,11 +92,11 @@
 						<div class="box">
 							<h2>SEO Services</h2>
 								<div class="box-inner">
-									<a href="/pages/services">
+									<a href="/seo-services/services.html">
 										<img src="/images/monitor.png" alt="service icon"/>
 									</a>
 
-									<a class="button" href="/pages/request-a-proposal.php">Browse Our Services</a>
+									<a class="button" href="/seo-services/services.html">Browse Our Services</a>
 									<h3>Browse Our Services!</h3>
 									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
 								</div><!-- /.box-inner-->
@@ -107,11 +107,11 @@
 						<div class="box">
 							<h2>Track Record</h2>
 								<div class="box-inner">
-									<a href="/pages/services">
+									<a href="/track-record.html">
 										<img src="/images/linegraph.png" alt="service icon"/>
 									</a>
 
-									<a class="button" href="/pages/request-a-proposal.php">View Our Record</a>
+									<a class="button" href="/track-record.html">View Our Record</a>
 									<h3>View Our Record!</h3>
 									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
 								</div><!-- /.box-inner-->
@@ -186,8 +186,8 @@
 						<p>
 						We only work with the highest quality Web Developers and SEO
 						Experts to ensure your website and business are handled with the
-						utmost care and professionalism. Our main focus is on <a target="_blank" href="/pages/services">SEO</a>, <a href="/pages/services">Web
-						Development</a> and <a target="_blank" href="/pages/services">Recovery Services</a> because it’s our speciality
+						utmost care and professionalism. Our main focus is on <a href="/seo-services/services.html">SEO</a>, <a href="/seo-services/services">Web
+						Development</a> and <a href="/seo-services/services.html">Recovery Services</a> because it’s our speciality
 						and we happen to be pretty darn good at it. We are vigilant in
 						our continuing education and make sure we are ahead of the
 						competition in our market research, search engine algorithm
@@ -201,7 +201,7 @@
 						online success you’re hoping for. Has your site received a manual
 						penalty by Google? No problem! We’ve helped numerous clients
 						reverse manual actions by Google and get their sites ranking
-						again. We can help you too. <a target="_blank" href="/pages/contact">Contact Us</a> for more information.
+						again. We can help you too. <a href="/contact.php">Contact Us</a> for more information.
 						</p>
 
 						<div class="social">
@@ -234,7 +234,7 @@
 
 							<div class="box">
 								<div class="box-inner">
-									<a target="_blank" href="/pages/rss.xml">
+									<a target="_blank" href="/seo-services/rss.xml">
 										<img src="/images/rss.png" alt="rss icon"/>
 										<h3>Subscribe To Us</h3>
 									</a>
@@ -258,9 +258,9 @@
 			<div class="box">
 				<nav>
 					<ul>
-						<li><a href="/pages/services">Services</a></li>
-						<li><a href="/pages/services">Blog</a></li>
-						<li><a href="/pages/services">Contact</a></li>
+						<li><a href="/seo-services/services.html">Services</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/contact.php">Contact</a></li>
 					</ul>
 				</nav>
 

@@ -888,7 +888,11 @@ body.individual-services{
 	}
 }
 
-
+.penalty-recovery{
+	.page:first-child, .svsbutton{
+		background: $uiyellow;
+	}
+}
 
 
 /*---------------------------------------------Contact Page------------------------------------*/
