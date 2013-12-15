@@ -164,7 +164,7 @@
 
 							<div class="box">
 								<div class="box-inner">
-									<a target="_blank" href="/seo-services/rss.xml">
+									<a target="_blank" href="http://www.sgwebmarketing.com/blog/?feed=rss2">
 										<img src="/images/rss.png" alt="rss icon"/>
 										<h3>Subscribe To Us</h3>
 									</a>

@@ -83,7 +83,7 @@
 
 									<a class="button" href="/seo-services/seo-audit.html">Analyze Your Site</a>
 									<h3>Analyze Your Site!</h3>
-									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
+									<p>Get an in-depth analysis of your website to learn how you can immediately improve on-site optimization.</p>
 								</div><!-- /.box-inner-->
 						</div><!-- /.box-->
 
@@ -98,7 +98,7 @@
 
 									<a class="button" href="/seo-services/services.html">Browse Our Services</a>
 									<h3>Browse Our Services!</h3>
-									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
+									<p>From Web Development to SEO and Recovery Services, we will increase your search engine visibility.</p>
 								</div><!-- /.box-inner-->
 						</div><!-- /.box-->
 
@@ -113,7 +113,7 @@
 
 									<a class="button" href="/track-record.html">View Our Record</a>
 									<h3>View Our Record!</h3>
-									<p>Don’t fall victim to the “cheap seo services” trap and risk hurting your website, your business, and your bottom line.</p>
+									<p>Take a look at some of the others sites we've worked on. We're proud of what we do for our customers. </p>
 								</div><!-- /.box-inner-->
 						</div><!-- /.box-->
 					</div><!-- /.page-inner-->
@@ -234,7 +234,7 @@
 
 							<div class="box">
 								<div class="box-inner">
-									<a target="_blank" href="/seo-services/rss.xml">
+									<a target="_blank" href="http://www.sgwebmarketing.com/blog/?feed=rss2">
 										<img src="/images/rss.png" alt="rss icon"/>
 										<h3>Subscribe To Us</h3>
 									</a>

@@ -1,6 +1,6 @@
-#RewriteEngine On
-#RewriteCond %{HTTP_HOST} !^www\.
-#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # compress text, html, javascript, css, xml:
 AddOutputFilterByType DEFLATE text/plain
@@ -18,3 +18,7 @@ AddOutputFilterByType DEFLATE application/x-javascript
 SetOutputFilter DEFLATE
 </files>
 
+
+# BEGIN WordPress
+
+# END WordPress

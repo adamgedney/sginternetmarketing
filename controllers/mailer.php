@@ -37,7 +37,7 @@ if(isset($_GET['action'])){
 		//send email
 		// mail($to,$subject,$message,$header);
 		mail($to,$subject,$message,$header);
-		header('Location: /pages/thankyou.html');
+		header('Location: /thankyou.html');
 
 
 
@@ -72,7 +72,7 @@ if(isset($_GET['action'])){
 		//send email
 		// mail($to,$subject,$message,$header);
 		mail($to,$subject,$message,$header);
-		header('Location: /pages/thankyou.html');
+		header('Location: /thankyou.html');
 
 	}// /action
 }// /isset
