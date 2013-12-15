@@ -33,7 +33,7 @@
 	<![endif]-->
 </head>
 	<body class="home">
-<!--poopoo-->
+<!--poopoo is good for the soul-->
 
 		<header>
 			<!-- <h1 class="hide-text">SG Internet Marketing</h1> -->
