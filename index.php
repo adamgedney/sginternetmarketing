@@ -90,7 +90,7 @@
 
 
 						<div class="box">
-							<h2>SEO Services</h2>
+							<h2>Services</h2>
 								<div class="box-inner">
 									<a href="/seo-services/services.html">
 										<img src="/images/monitor.png" alt="service icon"/>
